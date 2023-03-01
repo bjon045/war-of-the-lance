@@ -1,4 +1,4 @@
-package nz.co.warofthelance.ui.model.country;
+package nz.co.warofthelance.model.country;
 
 public class Country {
     private String name;

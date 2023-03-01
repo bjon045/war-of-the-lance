@@ -1,4 +1,4 @@
-package nz.co.warofthelance.ui.model.hero;
+package nz.co.warofthelance.model.hero;
 
 import org.mini2Dx.core.serialization.annotation.Field;
 

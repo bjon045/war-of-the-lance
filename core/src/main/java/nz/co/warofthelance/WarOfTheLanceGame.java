@@ -6,7 +6,7 @@ import org.mini2Dx.core.exception.SerializationException;
 import org.mini2Dx.core.game.ScreenBasedGame;
 import org.mini2Dx.core.graphics.viewport.FitViewport;
 
-import nz.co.warofthelance.ui.model.hero.Hero;
+import nz.co.warofthelance.model.hero.Hero;
 import nz.co.warofthelance.ui.screen.Screen;
 import nz.co.warofthelance.ui.screen.gameoptions.GameOptionsScreen;
 import nz.co.warofthelance.ui.screen.intro.IntroScreen;

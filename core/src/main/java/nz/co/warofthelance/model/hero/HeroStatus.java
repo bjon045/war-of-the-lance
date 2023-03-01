@@ -1,4 +1,4 @@
-package nz.co.warofthelance.ui.model.hero;
+package nz.co.warofthelance.model.hero;
 
 public enum HeroStatus {
 

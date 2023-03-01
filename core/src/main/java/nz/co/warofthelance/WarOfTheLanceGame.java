@@ -6,7 +6,7 @@ import org.mini2Dx.core.exception.SerializationException;
 import org.mini2Dx.core.game.ScreenBasedGame;
 import org.mini2Dx.core.graphics.viewport.FitViewport;
 
-import nz.co.warofthelance.model.hero.Hero;
+import nz.co.warofthelance.model.GameData;
 import nz.co.warofthelance.ui.screen.Screen;
 import nz.co.warofthelance.ui.screen.gameoptions.GameOptionsScreen;
 import nz.co.warofthelance.ui.screen.intro.IntroScreen;
@@ -22,11 +22,22 @@ public class WarOfTheLanceGame extends ScreenBasedGame {
     public void initialise() {
 
 	try {
-	    String json = Mdx.json.toJson(new Hero());
-	    System.out.println(json);
+	    GameData gd = Mdx.json.fromJson(Mdx.files.internal("gamedata.json"), GameData.class);
+	    System.out.println(gd.getWhiteStoneHeroes().get(0).getName());
 	} catch (SerializationException e) {
 	    throw new RuntimeException(e);
 	}
+
+//	List<Hero> heroes = new ArrayList<>();
+//	heroes.add(new Hero());
+//	gd.setHighlordHeroes(heroes);
+//	gd.setWhiteStoneHeroes(heroes);
+//	try {
+//	    String json = Mdx.json.toJson(gd);
+//	    System.out.println(json);
+//	} catch (SerializationException e) {
+//	    throw new RuntimeException(e);
+//	}
 
 	fitViewport = new FitViewport(Constants.SCREEM_WIDTH, Constants.SCREEM_HEIGHT);
 

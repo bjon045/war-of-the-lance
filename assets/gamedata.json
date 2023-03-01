@@ -1,0 +1,86 @@
+{
+	"whitestoneHeroes": [
+		{
+			"name": "Sturm",
+			"skillLevel": 9,
+			"status": "OKAY_ON_QUEST"
+		},
+		{
+			"name": "Berem",
+			"skillLevel": 3,
+			"status": "OKAY_ON_QUEST"
+		},
+		{
+			"name": "Lorac",
+			"skillLevel": 6,
+			"status": "OKAY_ON_QUEST"
+		},
+		{
+			"name": "Elistan",
+			"skillLevel": 4,
+			"status": "OKAY_ON_QUEST"
+		},
+		{
+			"name": "Gnosh",
+			"skillLevel": 6,
+			"status": "OKAY_ON_QUEST"
+		},
+		{
+			"name": "Par Sal",
+			"skillLevel": 5,
+			"status": "OKAY_ON_QUEST"
+		},
+		{
+			"name": "Tanis",
+			"skillLevel": 9,
+			"status": "OKAY_ON_QUEST"
+		},
+		{
+			"name": "Maquesta",
+			"skillLevel": 6,
+			"status": "OKAY_ON_QUEST"
+		},
+		{
+			"name": "Tasslehoff",
+			"skillLevel": 7,
+			"status": "OKAY_ON_QUEST"
+		},
+		{
+			"name": "Flint",
+			"skillLevel": 9,
+			"status": "OKAY_ON_QUEST"
+		},
+		{
+			"name": "Tika",
+			"skillLevel": 4,
+			"status": "OKAY_ON_QUEST"
+		},
+		{
+			"name": "Goldmoon",
+			"skillLevel": 8,
+			"status": "OKAY_ON_QUEST"
+		},
+		{
+			"name": "Riverwind",
+			"skillLevel": 9,
+			"status": "OKAY_ON_QUEST"
+		},
+		{
+			"name": "Raistlin",
+			"skillLevel": 7,
+			"status": "OKAY_ON_QUEST"
+		},
+		{
+			"name": "Caramon",
+			"skillLevel": 8,
+			"status": "OKAY_ON_QUEST"
+		}
+	],
+	"highlordHeroes": [
+		{
+			"name": "Berem",
+			"skillLevel": 3,
+			"status": "OKAY_ON_QUEST"
+		}
+	]
+}

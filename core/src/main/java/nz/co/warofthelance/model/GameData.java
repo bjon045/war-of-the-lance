@@ -11,34 +11,58 @@ import nz.co.warofthelance.model.hero.Hero;
 public class GameData {
 
     @Field
-    private List<Hero> whitestoneHeroes = new ArrayList<>();
+    private List<Hero> playerOneHeroes = new ArrayList<>();
 
     @Field
-    private List<Hero> highlordHeroes = new ArrayList<>();
+    private List<Hero> playerTwoHeroes = new ArrayList<>();
 
     @Field
     private List<Country> neutralCountries = new ArrayList<>();
 
     @Field
-    private List<Country> whitestoneCountries = new ArrayList<>();
+    private List<Country> playerOneCountries = new ArrayList<>();
 
     @Field
-    private List<Country> highlordCountries = new ArrayList<>();
+    private List<Country> playerTwoCountries = new ArrayList<>();
 
-    public List<Hero> getWhiteStoneHeroes() {
-	return whitestoneHeroes;
+    public List<Hero> getPlayerOneHeroes() {
+	return playerOneHeroes;
     }
 
-    public void setWhiteStoneHeroes(List<Hero> heroes) {
-	this.whitestoneHeroes = heroes;
+    public void setPlayerOneHeroes(List<Hero> playerOneHeroes) {
+	this.playerOneHeroes = playerOneHeroes;
     }
 
-    public List<Hero> getHighlordHeroes() {
-	return highlordHeroes;
+    public List<Hero> getPlayerTwoHeroes() {
+	return playerTwoHeroes;
     }
 
-    public void setHighlordHeroes(List<Hero> highlordHeroes) {
-	this.highlordHeroes = highlordHeroes;
+    public void setPlayerTwoHeroes(List<Hero> playerTwoHeroes) {
+	this.playerTwoHeroes = playerTwoHeroes;
+    }
+
+    public List<Country> getNeutralCountries() {
+	return neutralCountries;
+    }
+
+    public void setNeutralCountries(List<Country> neutralCountries) {
+	this.neutralCountries = neutralCountries;
+    }
+
+    public List<Country> getPlayerOneCountries() {
+	return playerOneCountries;
+    }
+
+    public void setPlayerOneCountries(List<Country> playerOneCountries) {
+	this.playerOneCountries = playerOneCountries;
+    }
+
+    public List<Country> getPlayerTwoCountries() {
+	return playerTwoCountries;
+    }
+
+    public void setPlayerTwoCountries(List<Country> playerTwoCountries) {
+	this.playerTwoCountries = playerTwoCountries;
     }
 
 }

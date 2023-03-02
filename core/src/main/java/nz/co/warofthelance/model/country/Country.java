@@ -11,10 +11,10 @@ public class Country {
     private int alignment; // AG
 
     @Field(optional = true)
-    private AllianceLevel startingWhitestoneAllianceLevel; // AL
+    private AllianceLevel playerOneAllianceLevel; // AL
 
     @Field(optional = true)
-    private AllianceLevel startingHighlordAllianceLevel; // AL
+    private AllianceLevel playerTwoAllianceLevel; // AL
 
     public String getName() {
 	return name;
@@ -32,20 +32,20 @@ public class Country {
 	this.alignment = alignment;
     }
 
-    public AllianceLevel getStartingWhitestoneAllianceLevel() {
-	return startingWhitestoneAllianceLevel;
+    public AllianceLevel getPlayerOneAllianceLevel() {
+	return playerOneAllianceLevel;
     }
 
-    public void setStartingWhitestoneAllianceLevel(AllianceLevel startingWhitestoneAllianceLevel) {
-	this.startingWhitestoneAllianceLevel = startingWhitestoneAllianceLevel;
+    public void setPlayerOneAllianceLevel(AllianceLevel playerOneAllianceLevel) {
+	this.playerOneAllianceLevel = playerOneAllianceLevel;
     }
 
-    public AllianceLevel getStartingHighlordAllianceLevel() {
-	return startingHighlordAllianceLevel;
+    public AllianceLevel getPlayerTwoAllianceLevel() {
+	return playerTwoAllianceLevel;
     }
 
-    public void setStartingHighlordAllianceLevel(AllianceLevel startingHighlordAllianceLevel) {
-	this.startingHighlordAllianceLevel = startingHighlordAllianceLevel;
+    public void setPlayerTwoAllianceLevel(AllianceLevel playerTwoAllianceLevel) {
+	this.playerTwoAllianceLevel = playerTwoAllianceLevel;
     }
 
 }

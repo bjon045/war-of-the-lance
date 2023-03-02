@@ -1,5 +1,5 @@
 {
-	"whitestoneHeroes": [
+	"playerOneHeroes": [
 		{
 			"name": "Sturm",
 			"skillLevel": 9,
@@ -76,7 +76,7 @@
 			"status": "OKAY_ON_QUEST"
 		}
 	],
-	"highlordHeroes": [
+	"playerTwoHeroes": [
 		{
 			"name": "Berem",
 			"skillLevel": 3,
@@ -90,14 +90,14 @@
 			"status": "OKAY_ON_QUEST"
 		}
 	],
-	"whitestoneCountries": [
+	"playerOneCountries": [
 		{
 			"name": "Berem",
 			"skillLevel": 3,
 			"status": "OKAY_ON_QUEST"
 		}
 	],
-	"highlordCountries": [
+	"playerTwoCountries": [
 		{
 			"name": "Berem",
 			"skillLevel": 3,

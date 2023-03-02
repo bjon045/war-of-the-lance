@@ -85,9 +85,52 @@
 	],
 	"neutralCountries": [
 		{
-			"name": "Berem",
-			"skillLevel": 3,
-			"status": "OKAY_ON_QUEST"
+			"name": "Blode",
+			"alignment": 9,
+			"playerOneAllianceLevel": null,
+			"playerTwoAllianceLevel": "MEDIUM"
+		},
+		{
+			"name": "Caergoth",
+			"alignment": 1,
+			"playerOneAllianceLevel": null,
+			"playerTwoAllianceLevel": "LOW"
+		},
+		{
+			"name": "Goodlund",
+			"alignment": 3,
+			"playerOneAllianceLevel": null,
+			"playerTwoAllianceLevel": "LOW"
+		},
+		{
+			"name": "Gunthar",
+			"alignment": 1,
+			"playerOneAllianceLevel": null,
+			"playerTwoAllianceLevel": "LOW"
+		},
+		{
+			"name": "Hylo",
+			"alignment": 3,
+			"playerOneAllianceLevel": null,
+			"playerTwoAllianceLevel": "LOW"
+		},
+		{
+			"name": "Kaolyn",
+			"alignment": 4,
+			"playerOneAllianceLevel": null,
+			"playerTwoAllianceLevel": "LOW"
+		},
+		{
+			"name": "Kern",
+			"alignment": 9,
+			"playerOneAllianceLevel": null,
+			"playerTwoAllianceLevel": "MEDIUM"
+		},
+		{
+			"name": "Khur",
+			"alignment": 7,
+			"playerOneAllianceLevel": null,
+			"playerTwoAllianceLevel": "LOW"
 		}
 	],
 	"playerOneCountries": [

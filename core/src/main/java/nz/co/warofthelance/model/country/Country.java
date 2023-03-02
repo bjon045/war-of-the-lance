@@ -4,7 +4,7 @@ import org.mini2Dx.core.serialization.annotation.Field;
 
 public class Country {
 
-    @Field(optional = true)
+    @Field
     private String name;
 
     @Field(optional = true)

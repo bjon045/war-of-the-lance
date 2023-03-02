@@ -32,8 +32,8 @@ public class BorderedScreen extends BasicGameScreen {
 
     @Override
     public void render(GameContainer gc, Graphics g) {
-	int widthMultiple = Constants.SCREEM_WIDTH / borderImage.getWidth();
-	int heightMultiple = Constants.SCREEM_HEIGHT / borderImage.getHeight();
+	int widthMultiple = Constants.SCREEN_WIDTH / borderImage.getWidth();
+	int heightMultiple = Constants.SCREEN_HEIGHT / borderImage.getHeight();
 	for (int x = 0; x < widthMultiple; x++) {
 	    for (int y = 0; y < heightMultiple; y++) {
 		if (!((x > 0 && x < widthMultiple - 1) && (y > 0 && y < heightMultiple - 1))) {

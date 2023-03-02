@@ -49,27 +49,26 @@ public class IntroScreen extends BorderedScreen {
 
     @Override
     public void render(GameContainer gc, Graphics g) {
-	g.drawTexture(mainImage, (Constants.SCREEM_WIDTH / 2) - (mainImage.getWidth() / 2),
-		(Constants.SCREEM_HEIGHT / 5) - (mainImage.getHeight() / 2));
+	g.drawTexture(mainImage, (Constants.SCREEN_WIDTH / 2) - (mainImage.getWidth() / 2),
+		(Constants.SCREEN_HEIGHT / 5) - (mainImage.getHeight() / 2));
 
-	g.drawTexture(gameName, (Constants.SCREEM_WIDTH / 2) - (gameName.getWidth() / 2),
-		(float) ((Constants.SCREEM_HEIGHT / 2.75) - (gameName.getHeight() / 2)));
+	g.drawTexture(gameName, (Constants.SCREEN_WIDTH / 2) - (gameName.getWidth() / 2),
+		(float) ((Constants.SCREEN_HEIGHT / 2.75) - (gameName.getHeight() / 2)));
 
 	g.setFont(Fonts.MAIN_FONT);
 	g.setColor(Colors.GREEN());
-//	Fonts.GREEN_FONT.draw(g, "Based on the game by David Landrey & Chuck Kroegel",
-//		(float) (Constants.SCREEM_WIDTH / 2.7), (float) (Constants.SCREEM_HEIGHT / 1.9));
-	g.drawString("Based on the game by David Landrey & Chuck Kroegel", (float) (Constants.SCREEM_WIDTH / 4),
-		(float) (Constants.SCREEM_HEIGHT / 1.9));
 
-	g.drawString("AND", (float) (Constants.SCREEM_WIDTH / 2.1), (float) (Constants.SCREEM_HEIGHT / 1.7));
+	g.drawString("Based on the game by David Landrey & Chuck Kroegel", (float) (Constants.SCREEN_WIDTH / 4),
+		(float) (Constants.SCREEN_HEIGHT / 1.9));
 
-	g.drawTexture(logo, (Constants.SCREEM_WIDTH / 2) - (logo.getWidth() / 2),
-		(float) (Constants.SCREEM_HEIGHT / 1.4) - (logo.getHeight() / 2));
+	g.drawString("AND", (float) (Constants.SCREEN_WIDTH / 2.1), (float) (Constants.SCREEN_HEIGHT / 1.7));
+
+	g.drawTexture(logo, (Constants.SCREEN_WIDTH / 2) - (logo.getWidth() / 2),
+		(float) (Constants.SCREEN_HEIGHT / 1.4) - (logo.getHeight() / 2));
 
 	g.setColor(Colors.WHITE());
-	g.drawString("Press <SPACE> or click to continue...", (float) (Constants.SCREEM_WIDTH / 2.8),
-		(float) (Constants.SCREEM_HEIGHT / 1.1));
+	g.drawString("Press <SPACE> or click to continue...", (float) (Constants.SCREEN_WIDTH / 2.8),
+		(float) (Constants.SCREEN_HEIGHT / 1.1));
 	super.render(gc, g);
     }
 

@@ -23,7 +23,6 @@ public class WarOfTheLanceGame extends ScreenBasedGame {
 
 	try {
 	    GameData gd = Mdx.json.fromJson(Mdx.files.internal("gamedata.json"), GameData.class);
-	    System.out.println(gd.getWhiteStoneHeroes().get(0).getName());
 	} catch (SerializationException e) {
 	    throw new RuntimeException(e);
 	}
@@ -39,7 +38,7 @@ public class WarOfTheLanceGame extends ScreenBasedGame {
 //	    throw new RuntimeException(e);
 //	}
 
-	fitViewport = new FitViewport(Constants.SCREEM_WIDTH, Constants.SCREEM_HEIGHT);
+	fitViewport = new FitViewport(Constants.SCREEN_WIDTH, Constants.SCREEN_HEIGHT);
 
 	addScreen(new IntroScreen());
 	addScreen(new StartScreen());

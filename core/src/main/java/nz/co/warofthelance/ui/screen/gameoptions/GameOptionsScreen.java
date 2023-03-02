@@ -1,5 +1,7 @@
 package nz.co.warofthelance.ui.screen.gameoptions;
 
+import static nz.co.warofthelance.GameContext.RESOURCES;
+
 import org.mini2Dx.core.Graphics;
 import org.mini2Dx.core.Mdx;
 import org.mini2Dx.core.game.GameContainer;
@@ -39,13 +41,13 @@ public class GameOptionsScreen extends BorderedScreen {
 
     private MenuOptionGroup<LevelSelectionGroup> levelOfPlaySelectionGroup;
 
-    private MenuOptionGroup<LevelSelectionGroup> highlordStrengthSelectionGroup;
+    private MenuOptionGroup<LevelSelectionGroup> playerTwoStrengthSelectionGroup;
 
-    private MenuOptionGroup<LevelSelectionGroup> whitestoneStrengthSelectionGroup;
+    private MenuOptionGroup<LevelSelectionGroup> playerOneStrengthSelectionGroup;
 
-    private MenuOptionGroup<LevelSelectionGroup> highlordReplacementsSelectionGroup;
+    private MenuOptionGroup<LevelSelectionGroup> playerTwoReplacementsSelectionGroup;
 
-    private MenuOptionGroup<LevelSelectionGroup> whitestoneReplacementsSelectionGroup;
+    private MenuOptionGroup<LevelSelectionGroup> playerOneReplacementsSelectionGroup;
 
     private MenuOptionGroup<LevelSelectionGroup> allianceLevelSelectionGroup;
 
@@ -87,24 +89,24 @@ public class GameOptionsScreen extends BorderedScreen {
 	levelOfPlaySelectionGroup.setSelected(LevelSelectionGroup.THREE.getMenyKey());
 
 	y = y + GAP_BETWEEN_GROUPS_VERTICAL;
-	highlordStrengthSelectionGroup = new MenuOptionGroup<LevelSelectionGroup>(secondColumnX, y,
+	playerTwoStrengthSelectionGroup = new MenuOptionGroup<LevelSelectionGroup>(secondColumnX, y,
 		GAP_BETWEEN_GROUPS_HORIZONTAL, true, LevelSelectionGroup.values());
-	highlordStrengthSelectionGroup.setSelected(LevelSelectionGroup.THREE.getMenyKey());
+	playerTwoStrengthSelectionGroup.setSelected(LevelSelectionGroup.THREE.getMenyKey());
 
 	y = y + GAP_BETWEEN_GROUPS_VERTICAL;
-	whitestoneStrengthSelectionGroup = new MenuOptionGroup<LevelSelectionGroup>(secondColumnX, y,
+	playerOneStrengthSelectionGroup = new MenuOptionGroup<LevelSelectionGroup>(secondColumnX, y,
 		GAP_BETWEEN_GROUPS_HORIZONTAL, true, LevelSelectionGroup.values());
-	whitestoneStrengthSelectionGroup.setSelected(LevelSelectionGroup.THREE.getMenyKey());
+	playerOneStrengthSelectionGroup.setSelected(LevelSelectionGroup.THREE.getMenyKey());
 
 	y = y + GAP_BETWEEN_GROUPS_VERTICAL;
-	highlordReplacementsSelectionGroup = new MenuOptionGroup<LevelSelectionGroup>(secondColumnX, y,
+	playerTwoReplacementsSelectionGroup = new MenuOptionGroup<LevelSelectionGroup>(secondColumnX, y,
 		GAP_BETWEEN_GROUPS_HORIZONTAL, true, LevelSelectionGroup.values());
-	highlordReplacementsSelectionGroup.setSelected(LevelSelectionGroup.THREE.getMenyKey());
+	playerTwoReplacementsSelectionGroup.setSelected(LevelSelectionGroup.THREE.getMenyKey());
 
 	y = y + GAP_BETWEEN_GROUPS_VERTICAL;
-	whitestoneReplacementsSelectionGroup = new MenuOptionGroup<LevelSelectionGroup>(secondColumnX, y,
+	playerOneReplacementsSelectionGroup = new MenuOptionGroup<LevelSelectionGroup>(secondColumnX, y,
 		GAP_BETWEEN_GROUPS_HORIZONTAL, true, LevelSelectionGroup.values());
-	whitestoneReplacementsSelectionGroup.setSelected(LevelSelectionGroup.THREE.getMenyKey());
+	playerOneReplacementsSelectionGroup.setSelected(LevelSelectionGroup.THREE.getMenyKey());
 
 	y = y + GAP_BETWEEN_GROUPS_VERTICAL;
 	allianceLevelSelectionGroup = new MenuOptionGroup<LevelSelectionGroup>(secondColumnX, y,
@@ -133,10 +135,10 @@ public class GameOptionsScreen extends BorderedScreen {
     @Override
     public void render(GameContainer gc, Graphics g) {
 	super.render(gc, g);
-	g.drawTexture(gameName, (float) (Constants.SCREEM_WIDTH / 2) - (gameName.getWidth() / 2),
+	g.drawTexture(gameName, (float) (Constants.SCREEN_WIDTH / 2) - (gameName.getWidth() / 2),
 		(float) borderImage.getHeight() + 30);
 
-	int widthMultiple = Constants.SCREEM_WIDTH / borderImage.getWidth();
+	int widthMultiple = Constants.SCREEN_WIDTH / borderImage.getWidth();
 	for (int x = 0; x < widthMultiple; x++) {
 	    if (x > 0 && x < widthMultiple - 1) {
 		g.drawTexture(borderImage, x * borderImage.getWidth(), 120);
@@ -147,10 +149,10 @@ public class GameOptionsScreen extends BorderedScreen {
 	playerTypeGroup.render(gc, g);
 	campaignTypeGroup.render(gc, g);
 	levelOfPlaySelectionGroup.render(gc, g);
-	highlordStrengthSelectionGroup.render(gc, g);
-	whitestoneStrengthSelectionGroup.render(gc, g);
-	highlordReplacementsSelectionGroup.render(gc, g);
-	whitestoneReplacementsSelectionGroup.render(gc, g);
+	playerTwoStrengthSelectionGroup.render(gc, g);
+	playerOneStrengthSelectionGroup.render(gc, g);
+	playerTwoReplacementsSelectionGroup.render(gc, g);
+	playerOneReplacementsSelectionGroup.render(gc, g);
 	allianceLevelSelectionGroup.render(gc, g);
 	startButton.render(g);
 
@@ -159,20 +161,20 @@ public class GameOptionsScreen extends BorderedScreen {
 
 	int firstColumnX = START_X + 30;
 	int y = START_Y;
-	g.drawString(") Highlord", firstColumnX, y);
+	g.drawString(") " + RESOURCES.getPlayerTwoName(), firstColumnX, y);
 
 	y = y + GAP_BETWEEN_GROUPS_VERTICAL;
 	g.drawString(") Game Selection", firstColumnX, y);
 	y = y + GAP_BETWEEN_GROUPS_VERTICAL;
 	g.drawString(") Level of Play", firstColumnX, y);
 	y = y + GAP_BETWEEN_GROUPS_VERTICAL;
-	g.drawString(") Highlord Strength", firstColumnX, y);
+	g.drawString(") " + RESOURCES.getPlayerTwoName() + " Strength", firstColumnX, y);
 	y = y + GAP_BETWEEN_GROUPS_VERTICAL;
-	g.drawString(") Whitestone Strength", firstColumnX, y);
+	g.drawString(") " + RESOURCES.getPlayerOneName() + " Strength", firstColumnX, y);
 	y = y + GAP_BETWEEN_GROUPS_VERTICAL;
-	g.drawString(") Highlord Replacements", firstColumnX, y);
+	g.drawString(") " + RESOURCES.getPlayerTwoName() + " Replacements", firstColumnX, y);
 	y = y + GAP_BETWEEN_GROUPS_VERTICAL;
-	g.drawString(") Whitestone Replacements", firstColumnX, y);
+	g.drawString(") " + RESOURCES.getPlayerOneName() + " Replacements", firstColumnX, y);
 	y = y + GAP_BETWEEN_GROUPS_VERTICAL;
 	g.drawString(") Alliance Level", firstColumnX, y);
 
@@ -228,16 +230,16 @@ public class GameOptionsScreen extends BorderedScreen {
 		    levelOfPlaySelectionGroup.setPrevMenuOption();
 		    break;
 		case D:
-		    highlordStrengthSelectionGroup.setPrevMenuOption();
+		    playerTwoStrengthSelectionGroup.setPrevMenuOption();
 		    break;
 		case E:
-		    whitestoneStrengthSelectionGroup.setPrevMenuOption();
+		    playerOneStrengthSelectionGroup.setPrevMenuOption();
 		    break;
 		case F:
-		    highlordReplacementsSelectionGroup.setPrevMenuOption();
+		    playerTwoReplacementsSelectionGroup.setPrevMenuOption();
 		    break;
 		case G:
-		    whitestoneReplacementsSelectionGroup.setPrevMenuOption();
+		    playerOneReplacementsSelectionGroup.setPrevMenuOption();
 		    break;
 		case H:
 		    allianceLevelSelectionGroup.setPrevMenuOption();
@@ -256,16 +258,16 @@ public class GameOptionsScreen extends BorderedScreen {
 		    levelOfPlaySelectionGroup.setNextMenuOption();
 		    break;
 		case D:
-		    highlordStrengthSelectionGroup.setNextMenuOption();
+		    playerTwoStrengthSelectionGroup.setNextMenuOption();
 		    break;
 		case E:
-		    whitestoneStrengthSelectionGroup.setNextMenuOption();
+		    playerOneStrengthSelectionGroup.setNextMenuOption();
 		    break;
 		case F:
-		    highlordReplacementsSelectionGroup.setNextMenuOption();
+		    playerTwoReplacementsSelectionGroup.setNextMenuOption();
 		    break;
 		case G:
-		    whitestoneReplacementsSelectionGroup.setNextMenuOption();
+		    playerOneReplacementsSelectionGroup.setNextMenuOption();
 		    break;
 		case H:
 		    allianceLevelSelectionGroup.setNextMenuOption();
@@ -330,27 +332,27 @@ public class GameOptionsScreen extends BorderedScreen {
 		return true;
 	    }
 
-	    selectedKey = highlordStrengthSelectionGroup.getSelectedByXY(screenX, screenY);
+	    selectedKey = playerTwoStrengthSelectionGroup.getSelectedByXY(screenX, screenY);
 	    if (selectedKey != null) {
-		highlordStrengthSelectionGroup.setSelected(selectedKey);
+		playerTwoStrengthSelectionGroup.setSelected(selectedKey);
 		return true;
 	    }
 
-	    selectedKey = whitestoneStrengthSelectionGroup.getSelectedByXY(screenX, screenY);
+	    selectedKey = playerOneStrengthSelectionGroup.getSelectedByXY(screenX, screenY);
 	    if (selectedKey != null) {
-		whitestoneStrengthSelectionGroup.setSelected(selectedKey);
+		playerOneStrengthSelectionGroup.setSelected(selectedKey);
 		return true;
 	    }
 
-	    selectedKey = highlordReplacementsSelectionGroup.getSelectedByXY(screenX, screenY);
+	    selectedKey = playerTwoReplacementsSelectionGroup.getSelectedByXY(screenX, screenY);
 	    if (selectedKey != null) {
-		highlordReplacementsSelectionGroup.setSelected(selectedKey);
+		playerTwoReplacementsSelectionGroup.setSelected(selectedKey);
 		return true;
 	    }
 
-	    selectedKey = whitestoneReplacementsSelectionGroup.getSelectedByXY(screenX, screenY);
+	    selectedKey = playerOneReplacementsSelectionGroup.getSelectedByXY(screenX, screenY);
 	    if (selectedKey != null) {
-		whitestoneReplacementsSelectionGroup.setSelected(selectedKey);
+		playerOneReplacementsSelectionGroup.setSelected(selectedKey);
 		return true;
 	    }
 

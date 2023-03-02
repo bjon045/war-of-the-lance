@@ -51,10 +51,10 @@ public class StartScreen extends BorderedScreen {
     @Override
     public void render(GameContainer gc, Graphics g) {
 	super.render(gc, g);
-	g.drawTexture(gameName, (float) (Constants.SCREEM_WIDTH / 2) - (gameName.getWidth() / 2),
+	g.drawTexture(gameName, (float) (Constants.SCREEN_WIDTH / 2) - (gameName.getWidth() / 2),
 		(float) borderImage.getHeight() + 30);
 
-	int widthMultiple = Constants.SCREEM_WIDTH / borderImage.getWidth();
+	int widthMultiple = Constants.SCREEN_WIDTH / borderImage.getWidth();
 	for (int x = 0; x < widthMultiple; x++) {
 	    if (x > 0 && x < widthMultiple - 1) {
 		g.drawTexture(borderImage, x * borderImage.getWidth(), 120);

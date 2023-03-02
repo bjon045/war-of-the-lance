@@ -4,13 +4,13 @@ import org.mini2Dx.core.serialization.annotation.Field;
 
 public class Hero {
 
-    @Field(optional = true)
+    @Field
     private String name;
 
-    @Field(optional = true)
+    @Field
     private int skillLevel;
 
-    @Field(optional = true)
+    @Field
     private HeroStatus status = HeroStatus.OKAY_ON_QUEST;
 
     public String getName() {

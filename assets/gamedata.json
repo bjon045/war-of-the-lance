@@ -82,5 +82,26 @@
 			"skillLevel": 3,
 			"status": "OKAY_ON_QUEST"
 		}
+	],
+	"neutralCountries": [
+		{
+			"name": "Berem",
+			"skillLevel": 3,
+			"status": "OKAY_ON_QUEST"
+		}
+	],
+	"whitestoneCountries": [
+		{
+			"name": "Berem",
+			"skillLevel": 3,
+			"status": "OKAY_ON_QUEST"
+		}
+	],
+	"highlordCountries": [
+		{
+			"name": "Berem",
+			"skillLevel": 3,
+			"status": "OKAY_ON_QUEST"
+		}
 	]
 }

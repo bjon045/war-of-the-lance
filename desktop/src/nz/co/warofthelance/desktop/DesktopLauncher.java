@@ -10,7 +10,7 @@ public class DesktopLauncher {
     public static void main(String[] arg) {
 	Lwjgl3Mini2DxConfig config = new Lwjgl3Mini2DxConfig(WarOfTheLanceGame.GAME_IDENTIFIER);
 	config.useVsync(true);
-	config.setWindowedMode(Constants.SCREEM_WIDTH, Constants.SCREEM_HEIGHT);
+	config.setWindowedMode(Constants.SCREEN_WIDTH, Constants.SCREEN_HEIGHT);
 	new DesktopMini2DxGame(new WarOfTheLanceGame(), config);
     }
 }

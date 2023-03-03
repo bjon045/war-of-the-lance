@@ -87,64 +87,154 @@
 		{
 			"name": "Blode",
 			"alignment": 9,
-			"playerOneAllianceLevel": null,
+			"playerOneAllianceLevel": "LOW",
 			"playerTwoAllianceLevel": "MEDIUM"
 		},
 		{
 			"name": "Caergoth",
 			"alignment": 1,
-			"playerOneAllianceLevel": null,
+			"playerOneAllianceLevel": "LOW",
 			"playerTwoAllianceLevel": "LOW"
 		},
 		{
 			"name": "Goodlund",
 			"alignment": 3,
-			"playerOneAllianceLevel": null,
+			"playerOneAllianceLevel": "LOW",
 			"playerTwoAllianceLevel": "LOW"
 		},
 		{
 			"name": "Gunthar",
 			"alignment": 1,
-			"playerOneAllianceLevel": null,
+			"playerOneAllianceLevel": "LOW",
 			"playerTwoAllianceLevel": "LOW"
 		},
 		{
 			"name": "Hylo",
 			"alignment": 3,
-			"playerOneAllianceLevel": null,
+			"playerOneAllianceLevel": "LOW",
 			"playerTwoAllianceLevel": "LOW"
 		},
 		{
 			"name": "Kaolyn",
 			"alignment": 4,
-			"playerOneAllianceLevel": null,
+			"playerOneAllianceLevel": "LOW",
 			"playerTwoAllianceLevel": "LOW"
 		},
 		{
 			"name": "Kern",
 			"alignment": 9,
-			"playerOneAllianceLevel": null,
+			"playerOneAllianceLevel": "LOW",
 			"playerTwoAllianceLevel": "MEDIUM"
 		},
 		{
 			"name": "Khur",
 			"alignment": 7,
-			"playerOneAllianceLevel": null,
+			"playerOneAllianceLevel": "LOW",
+			"playerTwoAllianceLevel": "LOW"
+		},
+		{
+			"name": "Kothas",
+			"alignment": 8,
+			"playerOneAllianceLevel": "LOW",
+			"playerTwoAllianceLevel": "MEDIUM"
+		},
+		{
+			"name": "Lemish",
+			"alignment": 6,
+			"playerOneAllianceLevel": "LOW",
+			"playerTwoAllianceLevel": "LOW"
+		},
+		{
+			"name": "Maelstrom",
+			"alignment": 5,
+			"playerOneAllianceLevel": "LOW",
+			"playerTwoAllianceLevel": "LOW"
+		},
+		{
+			"name": "Mithas",
+			"alignment": 7,
+			"playerOneAllianceLevel": "LOW",
+			"playerTwoAllianceLevel": "LOW"
+		},
+		{
+			"name": "Nordmaar",
+			"alignment": 5,
+			"playerOneAllianceLevel": "LOW",
+			"playerTwoAllianceLevel": "LOW"
+		},
+		{
+			"name": "N. Ergoth",
+			"alignment": 2,
+			"playerOneAllianceLevel": "LOW",
+			"playerTwoAllianceLevel": "LOW"
+		},
+		{
+			"name": "Palanthus",
+			"alignment": 5,
+			"playerOneAllianceLevel": "LOW",
+			"playerTwoAllianceLevel": "LOW"
+		},
+		{
+			"name": "Qualinesti",
+			"alignment": 3,
+			"playerOneAllianceLevel": "LOW",
+			"playerTwoAllianceLevel": "LOW"
+		},
+		{
+			"name": "Sanction",
+			"alignment": 8,
+			"playerOneAllianceLevel": "LOW",
+			"playerTwoAllianceLevel": "LOW"
+		},
+		{
+			"name": "Silvanesti",
+			"alignment": 3,
+			"playerOneAllianceLevel": "LOW",
+			"playerTwoAllianceLevel": "LOW"
+		},
+		{
+			"name": "Solanthus",
+			"alignment": 1,
+			"playerOneAllianceLevel": "MEDIUM",
+			"playerTwoAllianceLevel": "LOW"
+		},
+		{
+			"name": "Tarsis",
+			"alignment": 5,
+			"playerOneAllianceLevel": "LOW",
+			"playerTwoAllianceLevel": "LOW"
+		},
+		{
+			"name": "Thorbardin",
+			"alignment": 5,
+			"playerOneAllianceLevel": "LOW",
+			"playerTwoAllianceLevel": "LOW"
+		},
+		{
+			"name": "Throtyl",
+			"alignment": 6,
+			"playerOneAllianceLevel": "LOW",
+			"playerTwoAllianceLevel": "LOW"
+		},
+		{
+			"name": "Vingaard",
+			"alignment": 2,
+			"playerOneAllianceLevel": "LOW",
+			"playerTwoAllianceLevel": "LOW"
+		},
+		{
+			"name": "Zhakar",
+			"alignment": 5,
+			"playerOneAllianceLevel": "LOW",
 			"playerTwoAllianceLevel": "LOW"
 		}
 	],
 	"playerOneCountries": [
-		{
-			"name": "Berem",
-			"skillLevel": 3,
-			"status": "OKAY_ON_QUEST"
-		}
+
 	],
 	"playerTwoCountries": [
 		{
-			"name": "Berem",
-			"skillLevel": 3,
-			"status": "OKAY_ON_QUEST"
+			"name": "Naraka"
 		}
 	]
 }

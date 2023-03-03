@@ -78,8 +78,58 @@
 	],
 	"playerTwoHeroes": [
 		{
-			"name": "Berem",
+			"name": "Toade",
+			"skillLevel": 2,
+			"status": "OKAY_ON_QUEST"
+		},
+		{
+			"name": "Wyrllish",
+			"skillLevel": 6,
+			"status": "OKAY_ON_QUEST"
+		},
+		{
+			"name": "Dracart",
+			"skillLevel": 7,
+			"status": "OKAY_ON_QUEST"
+		},
+		{
+			"name": "Skie",
+			"skillLevel": 5,
+			"status": "OKAY_ON_QUEST"
+		},
+		{
+			"name": "Sleet",
+			"skillLevel": 7,
+			"status": "OKAY_ON_QUEST"
+		},
+		{
+			"name": "Cyan",
+			"skillLevel": 7,
+			"status": "OKAY_ON_QUEST"
+		},
+		{
+			"name": "Ember",
+			"skillLevel": 4,
+			"status": "OKAY_ON_QUEST"
+		},
+		{
+			"name": "Onyx",
+			"skillLevel": 7,
+			"status": "OKAY_ON_QUEST"
+		},
+		{
+			"name": "Blaize",
+			"skillLevel": 7,
+			"status": "OKAY_ON_QUEST"
+		},
+		{
+			"name": "Ladonna",
 			"skillLevel": 3,
+			"status": "OKAY_ON_QUEST"
+		},
+		{
+			"name": "Dalamar",
+			"skillLevel": 9,
 			"status": "OKAY_ON_QUEST"
 		}
 	],

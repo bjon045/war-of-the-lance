@@ -20,7 +20,7 @@ allprojects {
     version = '1.0.0'
     ext {
         appName = 'war-of-the-lance'
-        mini2DxVersion = '1.9.10'
+        mini2DxVersion = '2.0.0-beta.18'
         gdxVersion = '1.9.8'
         roboVMVersion = '2.3.7'
         minibusVersion = '1.3.0'
@@ -46,8 +46,8 @@ project(":core") {
 
 
     dependencies {
-        implementation 'org.mini2Dx:mini2dx-core:2.0.0-beta.17'
-        implementation 'org.mini2Dx:mini2dx-tiled:2.0.0-beta.17'
+        implementation "org.mini2Dx:mini2dx-core:$mini2DxVersion"
+        implementation "org.mini2Dx:mini2dx-tiled:$mini2DxVersion"
     }
 }
 
@@ -60,7 +60,7 @@ project(":desktop") {
 
     dependencies {
         implementation project(":core")
-        implementation 'org.mini2Dx:mini2dx-libgdx-desktop-lwjgl3:2.0.0-beta.17'
+        implementation "org.mini2Dx:mini2dx-libgdx-desktop-lwjgl3:$mini2DxVersion"
     }
     parcl {
         exe {
